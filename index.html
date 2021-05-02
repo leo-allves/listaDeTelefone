@@ -1,0 +1,47 @@
+<html ng-app="listaTelefonica">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./src/lib/style/style.css">
+
+	<!--link fonts-->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+	<!--link bootstrap css-->
+	<link rel="stylesheet" href="./src/lib/bootstrap/css/bootstrap.css">
+
+	<script src="./src/lib/angular/angular.js"></script>
+	<!--lincando modulo-->
+	<script src="./src/lib/angular/modulo.js"></script>
+
+	<title>Lista Telefonica</title>
+</head>
+<body>
+	<div id="jumbotronId" class="jumbotron" ng-controller="listaTelefonicaCtrl">
+		<h2>{{title}}</h2>
+		<table class="table table-striped">
+			<tr>
+				<th>Nome</th>
+				<th>Telefone</th>
+			</tr>
+			<!--percorrendo nome e telefone-->
+			<tr ng-repeat="contato in contatos">
+				<td>{{contato.nome}}</td>
+				<td>{{contato.telefone}}</td>
+			</tr>
+		</table>
+		<hr>
+		<!--inputs com ng-model-->
+		<input class="form-control"  type="text" ng-model="contato.nome" placeholder="Digite seu nome">
+		<input class="form-control" type="text" ng-model="contato.telefone" placeholder="Digite seu telefone">
+		<!--disparar a inserção de um novo contato na minha tabela-->
+		<button id="buttonId" class="btn btn-primary btn-block"  ng-click="adiconarContato(contato)">Adicionar Contato</button>
+		{{contato}}
+	</div>
+	
+	<!--link bootstrap JS-->
+	<script src="./src/lib/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

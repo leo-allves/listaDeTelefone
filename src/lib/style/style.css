@@ -1,0 +1,45 @@
+.jumbotron{
+	margin: 20px auto;
+
+	width: 400px;
+	text-align: center;
+	border: 3px solid rgb(129, 129, 129);
+	
+}
+#jumbotronId{
+	background-color: rgba(0, 0, 0, 0.863);
+	color: rgb(204, 223, 203);
+	font-size: 20px;
+}
+div .ng-binding{ /*h2*/
+	margin-bottom: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: rgba(180, 226, 226, 0.959);
+
+}
+.table{
+	text-align: center;
+	border: 2px solid rgb(129, 129, 129);
+	
+}
+.table tr{
+	background-color: rgba(180, 226, 226, 0.247);
+	font-family: 'Roboto', sans-serif;
+	color: rgba(12, 151, 194, 0.973);
+}
+.table tr td{
+	color: rgb(200, 206, 204);
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+}
+.form-control {
+	margin-bottom: 10px;
+}
+hr{
+	background-color: rgb(160, 161, 161);
+}
+#buttonId {
+	color: rgb(200, 206, 204);
+	background-color: rgba(180, 226, 226, 0.247);
+
+}
